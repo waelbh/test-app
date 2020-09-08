@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding: 0 40px 0 40px;
+    align-items: center;
+}
+tr th {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+h1 {
+    text-align: center;
+    margin: 10px;
+}

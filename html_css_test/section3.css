@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  padding: 20px 20px 0 20px;
+}
+nav {
+  background-color: #363333;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px 0 15px;
+}
+nav a.active {
+    background-color: green;
+}
+h1 {
+    margin: 20px;
+}
+ul {
+    margin-left: 55px;
+}
