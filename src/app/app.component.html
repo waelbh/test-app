@@ -1,1 +1,10 @@
-Hello World
+
+<nav mat-tab-nav-bar >
+    <a mat-tab-link *ngFor="let link of links"
+       (click)="activeLink = link.path"
+       [routerLink]="link.path"
+       [active]="activeLink.path === link.path"> {{link.name}} </a>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

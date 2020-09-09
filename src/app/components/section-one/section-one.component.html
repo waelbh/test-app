@@ -1,0 +1,39 @@
+<section>
+  <h1>[NPC] Beginner Merchant</h1>
+  <h3>Hello Adventurer, welcome to the town of Angular!</h3>
+  <h3>
+    Here you can explore all the exciting stuff like meeting weird
+    monster,learning new spell, and discovering rare item.
+  </h3>
+  <h3>
+    But first, you need some weapon/spell to accompany you along the way! I will
+  </h3>
+  <h3>give you 1000 gold, so choose your weapon/spell wisely~</h3>
+  <div class="cards">
+    <app-weapon
+      *ngFor="let weapon of weapons"
+      [weapon]="weapon"
+      (addToCartClick)="cartStatus(weapon)"
+    ></app-weapon>
+  </div>
+
+  <mat-divider class="mat-divider"></mat-divider>
+  <h3><strong>Added to cart:</strong></h3>
+  <div class="cart-weapons" *ngFor="let cartWeapons of getCartWeapons()">
+    <div class="cart-weapons-names">{{ cartWeapons.name }}</div>
+    <div>{{ cartWeapons.price }}</div>
+  </div>
+  <mat-divider class="mat-divider"></mat-divider>
+  <div class="total-container">
+    <h3><strong> Total : </strong></h3>
+    <div>{{ totalPrice() }}</div>
+  </div>
+  <button
+    mat-raised-button
+    class="buy-button"
+    color="primary"
+    (click)="buyHandler()"
+  >
+    Buy
+  </button>
+</section>

@@ -1,0 +1,15 @@
+<section>
+    <h1 class="intro">The Playlists</h1>
+    <h3 class="intro">
+        Here you can create your own playlist, edit your already existing playlist, add songs, and show it to the world!
+    </h3>
+    <div>
+        <button mat-raised-button (click)="popUpForm()"color="primary">
+            <mat-icon>playlist_add</mat-icon>
+            Nex Playlist
+        </button>
+    </div>
+    <mat-divider class="mat-divider"></mat-divider>
+    
+    <app-play-list *ngFor='let playList of playlists; let index = index' [playList]='playList' (deleteHandler)="deleteHandler(index)" (editHandler)="editHandler(index)"></app-play-list>
+</section>

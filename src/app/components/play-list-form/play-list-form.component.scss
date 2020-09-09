@@ -1,0 +1,12 @@
+.max-width{
+    width: 100%;
+}
+.song-style {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -10px 0 -10px;
+    .song-field {
+        padding: 0 10px 0 10px;
+    } 
+}
